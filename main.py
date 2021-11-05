@@ -8,6 +8,7 @@ def check_if_graph_is_traversable_from_node(G, node_num):
     graph_size = G.number_of_nodes()
     dfs_route_generator = dfs_edges(G, source=node_num)
     routes_from_node = list(dfs_route_generator)
+    #### uncomment it if you want to see the routes
     # print(routes_from_node)  #print example route to traverse all graph
     return True if len(routes_from_node) == graph_size-1 else False
 
@@ -29,6 +30,7 @@ if __name__ == '__main__':
     print("-------------------------------------")
 
     # load ajacency matrix from file
+    # file input2.txt contains other graph example
     adjacency_matrix = np.loadtxt('input.txt', dtype=int)
 
     #initate graph and fill it with values
