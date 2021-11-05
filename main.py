@@ -43,7 +43,6 @@ if __name__ == '__main__':
     #graw graph - just for visualization purposes
     nx.draw(G, with_labels = True)
     plt.savefig("graph.png", format="PNG")
-    plt.show(block=False)
 
     print("Task 1.1")
     print("Please input number of node to check if it's good to be first node to traverse all the nodes")
